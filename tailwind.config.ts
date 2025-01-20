@@ -26,6 +26,15 @@ export default {
                 openSans: ['var(--font-open-sans)'],
             },
         },
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: '12px',
+                md: '50px',
+                lg: '100px',
+            },
+        },
     },
+
     plugins: [],
 } satisfies Config;

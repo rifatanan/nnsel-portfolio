@@ -11,7 +11,7 @@ const Hero = () => {
 				Adaptive Logo Design <br /> for Your Brand
 			</h1>
 
-			<div className="h-1 w-24 sm:w-32 md:w-40 bg-orange-500 mx-auto rounded-full"></div>
+			<div className="h-1 w-24 sm:w-32 md:w-40 bg-[#FF9142] mx-auto rounded-full"></div>
 
 			<ButtonArrow />
 		</div>
