@@ -1,9 +1,10 @@
+import HomePage from '@/module/HomePage'
 import React from 'react'
 
 const page = () => {
 	return (
 		<div>
-			<p className='font-syne font-[700]'>My Projects Highlight</p>
+			<HomePage />
 		</div>
 	)
 }
