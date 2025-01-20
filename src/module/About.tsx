@@ -15,10 +15,10 @@ const About = () => {
 				<ButtonBorder name={"Discover More About Me"}></ButtonBorder>
 			</div>
 			<div className="relative rounded-lg lg:w-1/2">
-				<div className="absolute top-[-10px] right-0 md:right-[-20px]">
+				<div className="absolute top-[-10px] right-0 w-[60px] md:right-[30%]">
 					<Image src={horizontal} width={60} height={10} alt="Horizontal Decoration" />
 				</div>
-				<div className="absolute bottom-[10px] left-[-40px] h-[200px]">
+				<div className="absolute bottom-[10px] w-[60px] left-[-40px] h-[200px]">
 					<svg width="55" height="178" viewBox="0 0 55 178" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect x="0.5" y="0.5" width="54" height="177" rx="27" stroke="#FF9142"/>
 					</svg>
