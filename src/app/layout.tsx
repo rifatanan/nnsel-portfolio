@@ -12,16 +12,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body  className={`${outfit.variable} ${syne.variable} ${rubik.variable} ${inter.variable} ${openSans.variable}`}>
-		<div className="absolute">
-		<NavBar/>
-		{children}
-		</div>
-		
-	
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={`${outfit.variable} ${syne.variable} ${rubik.variable} ${inter.variable} ${openSans.variable}`}>
+				<NavBar>
+				{children}
+				</NavBar>
+			</body>
+		</html>
+	);
 }

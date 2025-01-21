@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
 	return (
-		<div>
+		<div className='px-[10px] md:px-[130px]'>
 			<HomePage />
 		</div>
 	)

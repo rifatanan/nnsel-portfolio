@@ -1,8 +1,14 @@
 import React from 'react'
 
-const ButtonBorder = ({name,color,border}:any) => {
+const ButtonBorder = ({name,bgColor,border}:any) => {
   return (
-	<button className={`uppercase border-[#FFFFFF4D] bg-bandColorBlack border-[2px] px-[20px] py-[7px] rounded-full`}>{name}</button>
+	<button
+      style={{
+        backgroundColor: bgColor,
+        borderColor: border
+      }}
+      className="inline-block uppercase border-2 px-[35px] py-[15px] rounded-full"
+	>{name}</button>
   )
 }
 

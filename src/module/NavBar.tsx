@@ -4,21 +4,29 @@ import React, { ReactNode } from 'react';
 import logo from '../../public/SVG/Brand-logo (1).svg'
 import ButtonBorder from '@/components/ButtonBorder'
 
-const NavBar= () => {
+type NavBarProps = {
+	children?: ReactNode;
+  };
+
+const NavBar: React.FC<NavBarProps> = ({children}) => {
+
 	return (
-		<div className='font-[500] text-[14px] leading-[16px] mt-[20px] px-[100px]'>
-			<div className='flex flex-col md:flex-row justify-between w-full items-center gap-10'>
-				<Link href={'/'} className=' cursor-pointer '>
-					<Image className='text-white' src={logo} width={85} height={15} alt='logo'></Image>
+		<div className='font-[500] text-[14px] leading-[16px] '>
+			<div className=' fixed w-full bg-bandColorSemiBlack flex flex-col md:flex-row justify-center lg:justify-between items-center md:items-start z-10 px-[130px] gap-2 md:gap-5 pt-2 md:pt-[33px]'>
+				<Link href={'/'} className='cursor-pointer h-[50px] flex '>
+					<Image className='text-white' src={logo} width={105} height={0} alt='logo'></Image>
 				</Link>
-				<ul className='flex flex-col md:flex-row uppercase text-white items-center gap-[30px] text-[#FFFFFF4D] text-[10px] font-[500] leading-[16px]'>
+				<ul className='flex flex-col md:flex-row uppercase text-white items-center  gap-[20px] md:gap-[70px] text-[#FFFFFF4D] text-[14px] font-[500] leading-[16px]'>
 					<li><Link href={'/'}>Home</Link></li>
-					<li><Link href={'/'}>About Me</Link></li>
+					<li><Link href={'/about-me'}>About Me</Link></li>
 					<li><Link href={'/'}>My works</Link></li>
 					<li>
-						<ButtonBorder name={"Contact"}/>
+						<ButtonBorder name={"Contact"} border = {'#FFFFFF4D'} bgColor={"#1A1A1A"}/>
 					</li>
 				</ul>
+			</div>
+			<div className='z-10'>
+			{children}
 			</div>
 		</div>
 	)

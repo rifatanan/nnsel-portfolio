@@ -1,3 +1,4 @@
+import BackgroundRound from '@/components/BackgroundRound';
 import LandingProjectCatd from './LandingProjectCatd';
 
 const projects = [
@@ -29,12 +30,14 @@ const projects = [
 
 const MyProject = () => {
     return (
-        <div className="container my-8">
-			<div className='grid grid-cols-1 font-syne font-[700] text-[50px] py-56 text-center'>
+        <div className=' relative'>
+			<BackgroundRound top={'60px'} right={'80px'}/>
+			<h1 className='grid grid-cols-1 font-syne font-[700] text-[56px] py-56 leading-[76px] text-center'>
 			My Projects Highlight
-			</div>
-            <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
-                {projects.map((project, index) => (
+			</h1>
+            <div className="grid grid-cols-1  md:grid-cols-2 gap-8 gap-y-20">
+                {
+				projects.map((project, index) => (
                     <LandingProjectCatd project={project} key={index} />
                 ))}
             </div>

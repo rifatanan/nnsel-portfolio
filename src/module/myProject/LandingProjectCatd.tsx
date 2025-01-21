@@ -12,36 +12,36 @@ interface LandingProjectCatdProps {
 
 const LandingProjectCatd = ({project}:LandingProjectCatdProps) => {
     return (
-        <div className="m-0 flex flex-col items-center">
-            <div>
+        <div className="flex flex-col gap-[20px] ">
+            <div className='w-full'>
                 <Image
                     src={project['image']}
-                    width={380}
-                    height={450}
+                    width={560}
+                    height={620}
                     alt="Project Image"
                 />
             </div>
-            <div className="flex flex-col items-start w-[380px]">
-                <div className="font-syne font-bold mt-2 mb-4">
+            <div className="flex flex-col gap-[20px]">
+                <div className="flex items-center gap-[32px] font-syne text-[24px] leading-[32px] py-[15px]">
                     {project['name']}
+					<div className='border-bandColorYellow border-[1px] w-[48px]'></div>
                 </div>
-                <div className="space-y-1">
-                    <div className="font-rubik flex items-center text-[10px]">
-                        <span className=" text-[#606060] w-16">
-                            Client:
+                <div className="font-rubik font-[400] text-[14px] leading-[22px] flex flex-col gap-2">
+                    <div className="flex gap-6">
+                        <span className=" text-[#606060]">
+                            Client:  
                         </span>
                         <span className="text-white">{project['client']}</span>
                     </div>
-                    <div className="font-rubik flex items-center text-[10px]">
-                        <span className=" text-[#606060] w-16">
-                            Work:
+                    <div className="flex gap-8">
+                        <span className=" text-[#606060]">
+                            Work:{' '}
                         </span>
 						{
 							project['work']?.map(work => 
-								<span className="text-white pe-2" key={work} >{work}</span>
+								<span className="text-white pe-2" key={work}>{work}</span>
 							)
 						}
-                        
                     </div>
                 </div>
             </div>
