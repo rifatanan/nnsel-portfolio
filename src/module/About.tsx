@@ -26,7 +26,7 @@ const About = () => {
 					height={0}
 					alt="Person"
 				/>
-				<div className="absolute top-[-10px] right-0">
+				<div className="absolute top-[-10px] w-[50%] right-0">
 					<svg width="110" height="34" viewBox="0 0 110 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect x="0.5" y="0.5" width="109" height="33" rx="16.5" stroke="#FF9142"/>
 					</svg>

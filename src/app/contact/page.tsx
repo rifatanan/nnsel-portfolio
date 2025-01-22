@@ -1,11 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const contact = () => {
   return (
 	<div className='pt-[100px]'>
-	  About me
+	  contact
 	</div>
   )
 }
 
-export default page
+export default contact

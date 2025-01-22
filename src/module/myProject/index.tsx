@@ -11,19 +11,19 @@ const projects = [
     {
         name: 'Brand Grouping',
         image: '/Images/Project/projectFront2.png',
-        client: 'Organc',
+        client: 'FR',
         work: ['Branding', 'Logo design'],
     },
     {
         name: 'Brand Suggestions',
         image: '/Images/Project/projectFront3.png',
-        client: 'Organc',
+        client: 'Rumanda',
         work: ['NFT Design'],
     },
     {
         name: 'NFT Glimps',
         image: '/Images/Project/projectFront4.png',
-        client: 'Organc',
+        client: 'T3d',
         work: ['NFT Logo'],
     },
 ];
