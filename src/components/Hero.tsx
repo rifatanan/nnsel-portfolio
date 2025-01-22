@@ -1,19 +1,15 @@
 import React from 'react';
-import BackgroundRound from './BackgroundRound'; // Optional background component
-import ButtonArrow from './ButtonArrow'; // Button component with arrow
+import BackgroundRound from './BackgroundRound';
+import ButtonArrow from './ButtonArrow';
 
 const Hero = () => {
 	return (
-		<div className="relative flex flex-col items-center justify-center min-h-screen text-white text-center gap-6 px-4 lg:px-0">
-			{/* <BackgroundRound /> */}
-
-			<h1 className="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl leading-snug sm:leading-tight md:leading-relaxed">
-				Adaptive Logo Design <br /> for Your Brand
-			</h1>
-
-			<div className="h-1 w-24 sm:w-32 md:w-40 bg-[#FF9142] mx-auto rounded-full"></div>
-
-			<ButtonArrow />
+		<div className="flex flex-col items-center md:justify-center min-h-screen text-white text-center pt-[300px] md:pt-[100px] gap-6 px-4 lg:px-0">
+			<BackgroundRound top={'120px'} right={'200px'}/>
+			<div className='flex flex-col gap-[100px] justify-center items-center relative'>
+				<h1 className="font-syne font-[700] text-[72px] leading-[86px]">Adaptive Logo Design <br /> for Your Brand</h1>
+				<ButtonArrow name={"Explore works"}/>
+			</div>
 		</div>
 	);
 };
