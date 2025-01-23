@@ -1,11 +1,12 @@
+import Contact from '@/module/Contact'
 import React from 'react'
 
-const contact = () => {
-  return (
-	<div className='pt-[100px]'>
-	  contact
-	</div>
-  )
+const page = () => {
+	return (
+		<div className='pt-[250px] md:pt-[100px] px-[10px] md:px-[130px]'>
+			<Contact/>
+		</div>
+	)
 }
 
-export default contact
+export default page

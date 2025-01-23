@@ -1,3 +1,4 @@
+import { Sora } from 'next/font/google';
 import type { Config } from 'tailwindcss';
 
 export default {
@@ -24,6 +25,7 @@ export default {
                 rubik: ['var(--font-rubik)'],
                 inter: ['var(--font-inter)'],
                 openSans: ['var(--font-open-sans)'],
+                sora: 'Sora',
             },
         },
         container: {

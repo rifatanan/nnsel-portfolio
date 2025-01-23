@@ -4,9 +4,9 @@ import React from 'react'
 import person from '../../public/Images/HomePage/People1.png'
 import BackgroundRound from '@/components/BackgroundRound'
 
-const About = () => {
+const AboutPerson = () => {
 	return (
-		<div className='flex flex-col md:flex-row  gap-[40px] justify-between'>
+		<div className='flex flex-col md:flex-row  gap-[40px] justify-between pt-[100px] md:mt-0'>
 			<div className='lg:w-3/5 md:pr-[100px] relative'>
 				<BackgroundRound top={'-140px'} right={'400px'}/>
 				<div className='flex flex-col relative gap-[40px] pt-[50px]'>
@@ -41,4 +41,4 @@ const About = () => {
 	)
 }
 
-export default About
+export default AboutPerson
