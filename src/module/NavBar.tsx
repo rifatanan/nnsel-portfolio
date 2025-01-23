@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { ReactNode, useState } from 'react';
-import logo from '../../public/SVG/Brand-logo (1).svg'
+import logo from '../../public/SVG/Brand-logo.svg'
 import ButtonBorder from '@/components/ButtonBorder'
 
 type NavBarProps = {

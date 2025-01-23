@@ -4,7 +4,7 @@ import BackgroundRound from './BackgroundRound'
 
 const Testimonial = () => {
   return (
-	<div className='w-full h-screen flex flex-col md:flex-row justify-center items-center gap-[60px] md:gap-[150px] md:pt-0  pt-[200px] relative'>
+	<div className='w-full h-fit  flex flex-col md:flex-row justify-center items-center gap-[60px] md:gap-[150px]  pt-[200px] relative'>
 		<div className='flex flex-col gap-[30px] md:gap-[60px] flex-wrap'>
 			<BackgroundRound top={'50px'} right={'1100px'}/>
 			<h1 className='font-syne font-[400] md:font-[700] text-[64px] leading-[76px]'>Testimonial</h1>
@@ -13,7 +13,7 @@ const Testimonial = () => {
 				I remember him saying simplicity is key to a successful logo and boy he was right. I can’t thank Aaronn enough for his effort and professionalism. I would recommend him to anyone looking for a design!”</p>
 			<h3 className='font-syne font-[700] text-[24px] leading-[28px]'>-Martin lee</h3>
 		</div>
-		<div className='w-[200px] h-[300px] pr-[50px]'>
+		<div className='w-[200px]  pr-[50px]'>
 			<svg width="163" height="95" viewBox="0 0 163 95" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<mask id="path-1-outside-1_101_422" maskUnits="userSpaceOnUse" x="0" y="0" width="163" height="95" fill="black">
 					<rect fill="white" width="163" height="95"/>

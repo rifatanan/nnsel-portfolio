@@ -1,6 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
-import logo from '../../public/SVG/Brand-logo (1).svg'
+import logo from '../../public/SVG/Brand-logo.svg'
 import Link from 'next/link'
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
 			<div className='flex w-full flex-col gap-[20px] md:gap-[100px] px-[10px] md:px-[130px]'>
 				<div className='flex flex-col gap-10 items-center mb-[100px]' >
 					<h3 className='text-bandColorYellow'>Get in Touch With Us</h3>
-					<Link href={'info@aaronn.com'} target="_blank" className=' underline cursor-pointer font-syne text-[32px] md:text-[64px] leading-[38px] md:leading-[76px]'>info@aaronn.com</Link>
+					<Link target="_blank" href={'mailto:info@aaronn.com'} rel="noopener noreferrer" className=' underline cursor-pointer font-syne text-[32px] md:text-[64px] leading-[38px] md:leading-[76px]'>info@aaronn.com</Link>
 				</div>
 				<div className='flex flex-col items-center w-full md:flex-row md:justify-between gap-10 md:gap-[100px]'>
 					<Image className='text-white' src={logo} width={205} height={0} alt='logo'></Image>
